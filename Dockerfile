@@ -1,7 +1,8 @@
 FROM ubuntu:latest
 
-RUN apt update
-RUN apt install python3 -y
+RUN python -m pip install coverage
+RUN python3 install pip3
+RUN pip3 install numpy
 
 
 WORKDIR /usr/src/app
