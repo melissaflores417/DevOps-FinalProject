@@ -40,7 +40,6 @@ def play_game():
             else:
                 print("\nMaximum Number Of Players is 10!\n")
                 play_game()        
-   
 
 
 if __name__ == "__main__":

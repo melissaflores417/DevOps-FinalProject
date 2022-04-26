@@ -43,6 +43,7 @@ class Player():
         
     
         return 10 
+                                  
                                     
 
     def Sort_Hand(hand):
