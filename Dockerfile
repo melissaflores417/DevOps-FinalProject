@@ -8,4 +8,4 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-CMD [ "python3", "tests.py"]
+CMD [ "python3", "-m", "unittest", "tests.py"]
