@@ -1,7 +1,6 @@
 import unittest
 from hand import Hand
 from player import Player
-from poker_game import play_game
 
 class TestRoyal(unittest.TestCase):
     def test_Royal_Flush_1(self):
