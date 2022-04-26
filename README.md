@@ -15,5 +15,7 @@ Simply make a change to a file such as adding a new blank line.
 - Push to repository 
 - Watch it do its thing
 
+
+
 Azure Web Apps deployment: 
 http://cs491finalproject.azurewebsites.net/
