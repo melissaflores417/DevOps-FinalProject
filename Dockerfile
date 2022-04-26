@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN python3 install pip3
+RUN python3 -m pip3
 RUN pip3 install numpy
 
 
