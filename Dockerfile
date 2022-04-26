@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
-RUN python3 -m pip3
+RUN apt update
+RUN apt install python3 -y
 
 
 
