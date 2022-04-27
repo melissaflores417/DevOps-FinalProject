@@ -2,7 +2,7 @@ FROM python:3.10
 
 WORKDIR /usr/src/app
 
-RUN pip3 install numpy
+RUN python3 -m pip install numpy
 
 COPY . .
 
