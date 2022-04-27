@@ -12,6 +12,9 @@ Simply make a change to a file such as adding a new blank line.
 - Push to repository 
 - Watch it do its thing
 
+Test coverage:
+Coverage reached 100% in hand.py, 77% in player.py
+
 docker instructions: 
 docker pull ghcr.io/melissaflores417/devops-finalproject:main
 
@@ -20,3 +23,4 @@ docker run ghcr.io/melissaflores417/devops-finalproject:main
 
 It is not recognizing the numpy import, however when you run, 
 python3 poker_game.py regularly, it runs fine.
+
