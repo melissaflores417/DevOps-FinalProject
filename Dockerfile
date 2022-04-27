@@ -2,7 +2,8 @@ FROM python:3.10
 
 WORKDIR /usr/src/app
 
-RUN python3 -m pip install numpy
+RUN sudo apt install python3-pip
+RUN sudo pip3 install numpy
 
 COPY . .
 
