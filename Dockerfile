@@ -1,10 +1,9 @@
-FROM ubuntu:latest
-
-RUN sudo apt-get update -y
-RUN sudo apt-get install -y python
-RUN pip3 install numpy
+FROM python:3.10
 
 WORKDIR /usr/src/app
+
+RUN pip install --no-cache-dir -r requirements.txt
+
 
 COPY . .
 
