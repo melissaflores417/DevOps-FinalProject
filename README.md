@@ -14,3 +14,4 @@ Simply make a change to a file such as adding a new blank line.
 - Commit changes
 - Push to repository 
 - Watch it do its thing
+
