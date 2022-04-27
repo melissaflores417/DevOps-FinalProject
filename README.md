@@ -6,9 +6,6 @@ The project demonstrates unit testing of the function within the hand class as w
 
 For automated tests, build and deployment, I utilized Github actions and Docker. 
 
-To run the program:
-python3 poker_game.py
-
 How to trigger automation:
 Simply make a change to a file such as adding a new blank line.
 - Commit changes
@@ -17,4 +14,9 @@ Simply make a change to a file such as adding a new blank line.
 
 docker instructions: 
 docker pull ghcr.io/melissaflores417/devops-finalproject:main
+
+There is an issue when running:
 docker run ghcr.io/melissaflores417/devops-finalproject:main
+
+It is not recognizing the numpy import, however when you run, 
+python3 poker_game.py regularly, it runs fine.
