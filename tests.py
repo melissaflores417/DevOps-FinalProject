@@ -81,7 +81,22 @@ class TestThree(unittest.TestCase):
     def test_Three_Of_A_Kind_1(self):
         result = Hand.ThreeofaKind(["3H", "3D", "3C", "7H", "8H"])
         self.assertEqual(result, True)
+        # False Case
+    def test_Three_Of_A_Kind_2(self):
+        result = Hand.ThreeofaKind(["3H", "3D", "7H", "8H", "1C"])
+        self.assertEqual(result, False)
+
+     # Four Of A Kind -> there is a higher rank that the hand applies to hence it will show False  i.e Four Of A Kind
      
+    def test_Three_Of_A_Kind_3(self):
+        result = Hand.ThreeofaKind(["3H", "3D", "3C", "3S", "8H"])
+        self.assertEqual(result, False)
+
+    # Full House -> there is a higher rank that the hand applies to hence it will show i.e Full House
+     
+    def test_Three_Of_A_Kind_3(self):
+        result = Hand.ThreeofaKind(["2S", "2H", "3H", "3D", "3C"])
+        self.assertEqual(result, False)
 # integration tests
 
 
@@ -116,7 +131,22 @@ class TestRoyalFlushHand(unittest.TestCase):
         result = Player.Check_Hand(["2H", "2D", "2C", "6S", "7H"])
         self.assertEqual(result, 7)
 
+    def test_Check_Hand_8(self):
+        result = Player.Check_Hand(["2H", "2D", "3C", "3S", "1H"])
+        self.assertEqual(result, 8)
 
+    def test_Check_Hand_9(self):
+        result = Player.Check_Hand(["3H", "3D", "1C", "JS", "QH"])
+        self.assertEqual(result, 9)
+
+    def test_Check_Hand_10(self):
+        result = Player.Check_Hand(["2H", "5D", "1C", "KS", "AH"])
+        self.assertEqual(result, 10)
+
+    
+    def test_Check_Hand_11(self):
+        result = Player.Check_Hand(["3C", "5D", "7C", "8S", "9H"])
+        self.assertEqual(result, 10)
 
 
 if __name__ == "__main__":
