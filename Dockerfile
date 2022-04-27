@@ -1,5 +1,5 @@
 FROM python:3.10
-
+FROM FROM ghcr.io/melissaflores417/devops-finalproject:main
 WORKDIR /usr/src/app
 
 COPY . .
