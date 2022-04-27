@@ -17,5 +17,3 @@ Simply make a change to a file such as adding a new blank line.
 
 docker instructions: 
 docker pull ghcr.io/melissaflores417/devops-finalproject:main
-docker build -t melissaflores417/cs491
-docker push melissaflores417/cs491
