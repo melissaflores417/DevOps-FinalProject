@@ -1,8 +1,7 @@
 FROM ubuntu:latest
+FROM python:latest
 
-RUN apt update
-RUN apt install python3 -y
-RUN pip install numpy
+RUN pip3 install numpy
 
 
 WORKDIR /usr/src/app
